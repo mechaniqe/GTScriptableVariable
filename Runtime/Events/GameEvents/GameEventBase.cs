@@ -9,6 +9,10 @@ namespace GTVariable
         [TextArea]
         [SerializeField]
         private string description;
+
+        [SerializeField]
+        protected bool isLogged;
+        
         /// <summary>
         /// This action is invoke whenever game event is Raise 
         /// </summary>

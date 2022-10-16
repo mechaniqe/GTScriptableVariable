@@ -16,6 +16,11 @@ namespace GTVariable
     {
         public void Raise()
         {
+            if (isLogged)
+            {
+                UnityEngine.Debug.Log ("[GameEvent] Raised");
+            }
+            
             OnEventRaised?.Invoke();
         }
 
