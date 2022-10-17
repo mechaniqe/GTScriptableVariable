@@ -27,7 +27,7 @@ namespace GTVariable
             }
             if (updateMode == UpdateMode.Event)
             {
-                value?.OnValueChanaged.AddListener(UpdateValue);
+                value?.OnValueChanged.AddListener(UpdateValue);
             }
         }
 
@@ -35,7 +35,7 @@ namespace GTVariable
         {
             if (updateMode == UpdateMode.Event)
             {
-                value?.OnValueChanaged.RemoveListener(UpdateValue);
+                value?.OnValueChanged.RemoveListener(UpdateValue);
             }
         }
 

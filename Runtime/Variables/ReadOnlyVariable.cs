@@ -11,7 +11,7 @@ namespace GTVariable
     {
         [SerializeField]
         private VariableType variable;
-        public UnityEvent OnValueChanaged => variable.OnValueChanaged;
+        public UnityEvent OnValueChanged => variable.OnValueChanged;
 
         public ReadOnlyVariable(VariableType variable)
         {

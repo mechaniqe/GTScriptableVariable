@@ -23,8 +23,8 @@ namespace GTVariable
 
             if(updateMode == UpdateMode.Event)
             {
-                currentValue.OnValueChanaged.AddListener(UpdateWidget);
-                maxValue.OnValueChanaged.AddListener(UpdateWidget);
+                currentValue.OnValueChanged.AddListener(UpdateWidget);
+                maxValue.OnValueChanged.AddListener(UpdateWidget);
             }
         }
 
@@ -32,8 +32,8 @@ namespace GTVariable
         {
             if (updateMode == UpdateMode.Event)
             {
-                currentValue.OnValueChanaged.RemoveListener(UpdateWidget);
-                maxValue.OnValueChanaged.RemoveListener(UpdateWidget);
+                currentValue.OnValueChanged.RemoveListener(UpdateWidget);
+                maxValue.OnValueChanged.RemoveListener(UpdateWidget);
             }
         }
 

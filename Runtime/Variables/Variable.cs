@@ -16,9 +16,9 @@ namespace GTVariable
         public T value;
 
         [SerializeField]
-        private UnityEvent onValueChanaged;
+        private UnityEvent onValueChanged;
 
-        public UnityEvent OnValueChanaged => onValueChanaged;
+        public UnityEvent OnValueChanged => onValueChanged;
 
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace GTVariable
         {
             this.value = value;
 
-            onValueChanaged?.Invoke();
+            onValueChanged?.Invoke();
         }
 
         public static implicit operator T(Variable<T> genericVariable)
